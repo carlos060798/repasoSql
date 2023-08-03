@@ -49,3 +49,11 @@ SELECT * FROM `tbclientes` WHERE  EDAD <> 14 // PARA  HACER COMPARACIONES DE DIF
 SELECT * FROM `tbclientes` WHERE YEAR(Fechanacimineto)= 2023; // PARA SELECCIONAR POR AÑO con fechas 
 SELECT * FROM `tbclientes` WHERE DAY(Fechanacimineto)= 18; // PARA SELECCIONAR POR DIA con fechas
 
+# consultas condicionales
+select * from prodcutos where  sabor="mango" and tamaño=470; // para seleccionar por dos condiciones
+select * from prodcutos where  sabor="mango" or tamaño=470; // para seleccionar por dos condiciones una se debe cumplir
+select * from prodcutos where  sabor="mango"  and not tamaño=470 ; // consulta  multiple con and y not 
+select * from prodcutos where  sabor in ("mango","uva") ; // consulta  multiple con and y not
+
+# consultas conwdicionales multiples
+select * from clientes wehere  cuidad in ("cucuta","bucaramanga") and edad between 20 and 24 ; // consulta  multiple con  in ,and y between
